@@ -2,11 +2,13 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: fm-test-flag
+flag: showMessage
 flagType: boolean
-description: test Description
+description: ""
 labels:
 
 availableValues:
+  - "false"
+  - "true"
 
 isPermanent: false
