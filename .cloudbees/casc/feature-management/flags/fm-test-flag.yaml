@@ -2,17 +2,11 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: fontColor
-flagType: string
+flag: fm-test-flag
+flagType: number
 description: ""
 labels:
-  - firstProject
 
 availableValues:
-  - Red
-  - Green
-  - Blue
-  - Black
-  - Yellow
 
 isPermanent: false
