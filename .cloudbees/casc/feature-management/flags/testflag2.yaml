@@ -1,0 +1,16 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: testflag2
+flagType: string
+description: Testing stickiness property
+labels:
+
+availableValues:
+  - red
+  - silver
+  - black
+  - blue
+
+isPermanent: false
