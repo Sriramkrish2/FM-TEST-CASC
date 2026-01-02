@@ -1,0 +1,40 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: rererer
+
+enabled: false
+
+stickinessProperty: rox.distinct_id
+
+defaultValue:
+  valueWrittenInCode: true
+
+conditions:
+  - allOf:
+      - property:
+          name: grpc
+          operator: regex
+          operands:
+            - qqqq
+    flagValue: false
+  - allOf:
+      - property:
+          name: stringProp
+          operator: regex
+          operands:
+            - fdfddfd
+    flagValue: false
+  - allOf:
+      - property:
+          name: service
+          operator: in-array
+          operands:
+            - gfgfgfg
+    flagValue: false
+  - allOf:
+      - property:
+          name: boolProp
+          operator: is-false
+    flagValue: false

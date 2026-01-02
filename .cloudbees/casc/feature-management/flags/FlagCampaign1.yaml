@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: FlagCampaign1
+flagType: boolean
+description: Deliver campaign 1 to specific customers.
+labels:
+  - toto
+
+availableValues:
+  - "true"
+  - "false"
+
+isPermanent: false

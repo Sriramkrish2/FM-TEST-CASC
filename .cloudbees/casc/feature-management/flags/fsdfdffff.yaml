@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: fsdfdffff
+flagType: boolean
+description: ""
+labels:
+  - toto
+
+availableValues:
+  - "true"
+  - "false"
+
+isPermanent: false

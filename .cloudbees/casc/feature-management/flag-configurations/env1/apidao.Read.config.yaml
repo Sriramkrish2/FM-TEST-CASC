@@ -1,0 +1,54 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: apidao.Read
+
+enabled: false
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: "False"
+
+conditions:
+  - allOf:
+      - property:
+          name: grpc
+          operator: in-array
+          operands:
+            - Endpoint.FetchEndpointByInstallationId
+            - Endpoint.GetRepoEndpointForCloneURL
+            - OrganizationsService.GetOrganizations
+    flagValue: "True"
+  - allOf:
+      - property:
+          name: dao
+          operator: in-array
+          operands:
+            - endpoints
+            - services
+            - resources
+            - platform.fm_sdkkeys
+            - application_releases
+            - automations
+            - automation_run_status
+            - repositories
+            - rbac
+            - roles
+            - memberships
+            - teams
+            - authorizations
+            - workflow_manual_approvals
+            - artifact_infos
+            - artifact_info_labels
+    flagValue: "True"
+  - allOf:
+      - property:
+          name: service
+          operator: in-array
+          operands:
+            - notification-service
+            - endpoint-service
+            - flag-service
+            - scm-service
+    flagValue: "True"

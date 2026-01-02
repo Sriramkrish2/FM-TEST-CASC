@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: apidao.Read
+flagType: string
+description: flag to read from api daofdffdfd
+labels:
+  - some rrrr
+
+availableValues:
+  - "False"
+  - "True"
+
+isPermanent: false
