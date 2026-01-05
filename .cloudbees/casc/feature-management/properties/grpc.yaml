@@ -1,7 +1,0 @@
----
-apiVersion: featuremanagement.cloudbees.io/v1alpha1
-kind: flag-properties
-
-name: grpc
-type: String
-description: "The fully qualified name of a GRPC function e.g. "RepositoryService.ListRepositories""

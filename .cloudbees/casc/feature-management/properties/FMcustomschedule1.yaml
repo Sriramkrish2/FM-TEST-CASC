@@ -1,7 +1,0 @@
----
-apiVersion: featuremanagement.cloudbees.io/v1alpha1
-kind: flag-properties
-
-name: FMcustomschedule1
-type: Datetime
-description: "Schedule campaign 1"
