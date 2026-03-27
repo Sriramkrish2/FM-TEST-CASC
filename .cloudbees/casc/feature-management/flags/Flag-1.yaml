@@ -2,13 +2,13 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: Message
-flagType: string
+flag: Flag-1
+flagType: boolean
 description: ""
 labels:
 
 availableValues:
-  - This is the default message; try changing some flag values!
-  - sample message
+  - "true"
+  - "false"
 
 isPermanent: false

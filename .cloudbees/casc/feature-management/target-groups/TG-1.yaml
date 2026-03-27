@@ -2,12 +2,12 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: target-group
 
-name: TG1
+name: TG-1
 
-description: tg1
+description: Boole
 
 conditions:
   allOf:
     - property:
-        name: Boolean-prop
+        name: boolean-test
         operator: is-true

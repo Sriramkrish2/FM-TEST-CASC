@@ -2,9 +2,9 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: fm-test-flag
+flag: Flag-2
 flagType: boolean
-description: test Description
+description: ""
 labels:
 
 availableValues:
