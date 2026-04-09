@@ -8,6 +8,8 @@ description:
 
 conditions:
   allOf:
-    - anyOf:
-        - group:
-            name: TG1
+    - property:
+        name: internal.api_version
+        operator: semver-eq
+        operands:
+            - "1"
