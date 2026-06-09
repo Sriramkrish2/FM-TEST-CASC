@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    steps:
-      - name: Say hello
-        run: |
-          echo "hello world"
-        shell: sh
     runs-on:
       - rama-label-1
       - rama-label-2
+    steps:
+      - name: Say hello
+        shell: sh
+        run: |
+          echo "hello world"
