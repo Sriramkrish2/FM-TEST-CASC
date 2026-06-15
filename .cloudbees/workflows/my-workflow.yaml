@@ -12,6 +12,6 @@ jobs:
       - name: Say hello
         shell: sh
         run: |
-          echo "hello world"
+          echo "Hello world"
     runs-on:
       - rama-label-3
