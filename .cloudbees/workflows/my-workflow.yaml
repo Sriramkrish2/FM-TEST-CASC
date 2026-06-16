@@ -7,11 +7,19 @@ on:
       - "**"
   workflow_dispatch:
 jobs:
-  build:
+  Job1:
     steps:
-      - name: Say hello
+      - name: Say hello job1
         shell: sh
         run: |
-          echo "Hello world"
+          echo "Hello world from job1"
+    runs-on:
+      - rama-label-3
+  Job2:
+    steps:
+      - name: Say hello job2
+        shell: sh
+        run: |
+          echo "Hello world from job2"
     runs-on:
       - rama-label-3
