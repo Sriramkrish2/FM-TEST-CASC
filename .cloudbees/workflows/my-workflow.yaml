@@ -7,7 +7,7 @@ on:
       - "**"
   workflow_dispatch:
 jobs:
-  Job1:
+  job1:
     steps:
       - name: Say hello job1
         shell: sh
