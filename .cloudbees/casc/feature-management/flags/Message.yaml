@@ -6,6 +6,9 @@ flag: Message
 flagType: string
 description: ""
 labels:
+  - FM
+  - Betagroup
+  - Test
 
 availableValues:
   - This is the default message; try changing some flag values!
